@@ -18,9 +18,9 @@ let weather = {
         document.querySelector(".icon").src = 
         "https://openweathermap.org/img/wn/" + icon  +"@2x.png";
         document.querySelector(".description").innerText = description;
-        document.querySelector(".temp").innerText = temp + "\u00B0F";
+        document.querySelector(".temp").innerText = Math.round(temp) + "\u00B0F";
         document.querySelector(".humidity").innerText = "humidity: " + humidity + "%";
-        document.querySelector(".wind").innerText = "Wind Speed: " + speed + " Mph ";
+        document.querySelector(".wind").innerText = "Wind Speed: " + Math.round(speed) + " Mph ";
         document.querySelector(".weather").classList.remove("loading");
         document.body.style.backgroundImage = "url('https://source.unsplash.com/random/1600x900/?" + name +" ')"
 
@@ -46,4 +46,4 @@ document.querySelector(".search-button")
 //     }
 // });
 
-weather.fetchWeather("33637");
+// weather.fetchWeather("");

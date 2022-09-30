@@ -71,6 +71,8 @@ h1.temp {
 .description {
     text-transform: capitalize;
     margin-left: 5px;
+    font-size: 1.5em;
+    
 }
 
 .weather.loading {
@@ -80,7 +82,7 @@ h1.temp {
 }
 .weather.loading:after{
     visibility: visible;
-    content: "loading...";
+    content: "Enter a ZipCode To Find The Weather";
     color: white;
     position:absolute;
     top: 0;
